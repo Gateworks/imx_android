@@ -12,8 +12,6 @@
            fetch="git://github.com/" />
   <remote  name="gitorious"
            fetch="git://gitorious.org/" />
-  <remote  name="linuxtv"
-           fetch="git://linuxtv.org/" />
 
   <default revision="refs/tags/android-4.3_r2.1"
            remote="aosp"
@@ -32,6 +30,7 @@
   </project>
   <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" remote="gateworks-github" revision="imx_jb4.3_1.1.0-ga" />
   <project path="system/core" name="android_system_core" remote="gateworks-github" revision="imx_jb4.3_1.1.0-ga" />
+  <project path="external/v4l-utils" name="v4l-utils.git" remote="gateworks-github" revision="imx_jb4.3_1.1.0-ga" />
 
   <!-- Gateworks patches to Freescale (proprietary) components -->
   <project path="hardware/imx" name="hardware-imx" remote="fsl-proprietary" revision="imx_jb4.3_1.1.0-ga" />
@@ -39,7 +38,6 @@
   <!-- projects (OpenSource) added by Gateworks -->
   <project path="external/i2c-tools" name="suapapa/i2c-tools" remote="github" revision="android" />
   <project path="external/can-utils" name="linux-can/can-utils.git" remote="gitorious" revision="master" />
-  <project path="external/v4l-utils" name="v4l-utils.git" remote="linuxtv" revision="master" />
 
   <!-- projects (proprietary) added by Freescale -->
   <project path="device/fsl" name="android_device_fsl" remote="fsl-proprietary" revision="imx_jb4.3_1.1.0-ga" />
