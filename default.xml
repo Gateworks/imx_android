@@ -12,6 +12,8 @@
            fetch="git://github.com/" />
   <remote  name="gitorious"
            fetch="git://gitorious.org/" />
+  <remote  name="android-x86"
+           fetch="http://git.android-x86.org/" />
 
   <default revision="refs/tags/android-4.4.3_r1"
            remote="aosp"
@@ -36,7 +38,7 @@
   <!-- projects (OpenSource) added by Gateworks -->
   <project path="external/i2c-tools" name="suapapa/i2c-tools" remote="github" revision="android" />
   <project path="external/can-utils" name="linux-can/can-utils.git" remote="gitorious" revision="master" />
-  <project path="package/apps/TSCalibration2" name="0xdroid/packages_apps_tscalibration2" remote="gitorious" revision="master" />
+  <project path="package/apps/TSCalibration2" name="platform/packages/apps/TSCalibration2" remote="android-x86" revision="kitkat-x86" />
 
   <!-- projects (proprietary) added by Freescale -->
   <project path="device/fsl" name="android_device_fsl" remote="fsl-proprietary" revision="imx_kk4.4.3_2.0.0-beta" />
