@@ -20,70 +20,75 @@
            sync-j="4" />
 
   <!-- Gateworks kernel and u-boot -->
-  <project path="kernel_imx" name="linux-imx6" revision="gateworks_3.10.31_1.1.0_beta" remote="gateworks-github" />
+  <project path="kernel_imx" name="linux-imx6" revision="gateworks_kk4.4.3_2.0.0-ga" remote="gateworks-github" />
   <project path="bootable/bootloader/uboot-imx" name="u-boot-imx6" revision="gateworks_v2014.04" remote="gateworks-github" />
 
   <!-- Gateworks device layer -->
-  <project path="device/gateworks" name="android_device_gateworks" revision="imx_kk4.4.3_2.0.0-beta" remote="gateworks-github" groups="pdk" />
+  <project path="device/gateworks" name="android_device_gateworks" revision="imx_kk4.4.3_2.0.0-ga" remote="gateworks-github" groups="pdk" />
 
   <!-- Gateworks patches to other (OpenSource) components -->
-  <project path="build" name="android_build" remote="gateworks-github" revision="imx_kk4.4.3_2.0.0-beta" groups="pdk" >
+  <project path="build" name="android_build" remote="gateworks-github" revision="imx_kk4.4.3_2.0.0-ga" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-  <project path="system/core" name="android_system_core" remote="gateworks-github" revision="imx_kk4.4.3_2.0.0-beta" />
+  <project path="system/core" name="android_system_core" remote="gateworks-github" revision="imx_kk4.4.3_2.0.0-ga" />
 
   <!-- Gateworks patches to Freescale (proprietary) components -->
-  <project path="hardware/imx" name="hardware-imx" remote="fsl-proprietary" revision="imx_kk4.4.3_2.0.0-beta" />
+  <project path="hardware/imx" name="hardware-imx" remote="fsl-proprietary" revision="imx_kk4.4.3_2.0.0-ga" />
 
   <!-- projects (OpenSource) added by Gateworks -->
   <project path="external/i2c-tools" name="suapapa/i2c-tools" remote="github" revision="android" />
   <project path="external/can-utils" name="linux-can/can-utils.git" remote="gitorious" revision="master" />
-  <project path="package/apps/TSCalibration2" name="platform/packages/apps/TSCalibration2" remote="android-x86" revision="kitkat-x86" />
+  <project path="packages/apps/TSCalibration2" name="platform/packages/apps/TSCalibration2" remote="android-x86" revision="kitkat-x86" />
 
   <!-- projects (proprietary) added by Freescale -->
-  <project path="device/fsl" name="android_device_fsl" remote="fsl-proprietary" revision="imx_kk4.4.3_2.0.0-beta" />
-  <project path="device/fsl-proprietary" name="fsl-proprietary" remote="fsl-proprietary" revision="imx_kk4.4.3_2.0.0-beta" />
-  <project path="external/fsl_vpu_omx" name="fsl_vpu_omx" remote="fsl-proprietary" revision="imx_kk4.4.3_2.0.0-beta" />
-  <project path="external/linux-firmware-imx" name="linux-firmware-imx" remote="fsl-proprietary" revision="imx_kk4.4.3_2.0.0-beta" />
+  <project path="device/fsl" name="android_device_fsl" remote="fsl-proprietary" revision="imx_kk4.4.3_2.0.0-ga" />
+  <project path="device/fsl-proprietary" name="fsl-proprietary" remote="fsl-proprietary" revision="imx_kk4.4.3_2.0.0-ga" />
+  <project path="external/fsl_vpu_omx" name="fsl_vpu_omx" remote="fsl-proprietary" revision="imx_kk4.4.3_2.0.0-ga" />
+  <project path="external/linux-firmware-imx" name="linux-firmware-imx" remote="fsl-proprietary" revision="imx_kk4.4.3_2.0.0-ga" />
 
   <!-- projects (OpenSource) added by Freescale -->
-  <project path="external/busybox" name="android-busybox" remote="gateworks-github" revision="imx_kk4.4.3_2.0.0-beta" />
-  <project path="external/linux-lib" name="android_external_linux-lib" remote="gateworks-github" revision="imx_kk4.4.3_2.0.0-beta" />
-  <project path="external/linux-test" name="imx-linux-test" remote="gateworks-github" revision="imx_kk4.4.3_2.0.0-beta" />
-  <project path="external/mtd-utils" name="android_external_mtd-utils" remote="gateworks-github" revision="imx_kk4.4.3_2.0.0-beta" />
-  <project path="external/ntfs-3g" name="ntfs-3g" remote="gateworks-github" revision="imx_kk4.4.3_2.0.0-beta" />
-  <project path="external/powerdebug" name="powerdebug" remote="gateworks-github" revision="imx_kk4.4.3_2.0.0-beta" />
-  <project path="packages/apps/fsl_imx_demo" name="fsl_imx_demo" remote="gateworks-github" revision="imx_kk4.4.3_2.0.0-beta" />
+  <project path="external/busybox" name="android-busybox" remote="gateworks-github" revision="imx_kk4.4.3_2.0.0-ga" />
+  <project path="external/linux-lib" name="android_external_linux-lib" remote="gateworks-github" revision="imx_kk4.4.3_2.0.0-ga" />
+  <project path="external/linux-test" name="imx-linux-test" remote="gateworks-github" revision="imx_kk4.4.3_2.0.0-ga" />
+  <project path="external/mtd-utils" name="android_external_mtd-utils" remote="gateworks-github" revision="imx_kk4.4.3_2.0.0-ga" />
+  <project path="external/ntfs-3g" name="ntfs-3g" remote="gateworks-github" revision="imx_kk4.4.3_2.0.0-ga" />
+  <project path="external/powerdebug" name="powerdebug" remote="gateworks-github" revision="imx_kk4.4.3_2.0.0-ga" />
+  <project path="packages/apps/fsl_imx_demo" name="fsl_imx_demo" remote="gateworks-github" revision="imx_kk4.4.3_2.0.0-ga" />
 
   <!-- projects (OpenSource) updated by Freescale -->
-  <project path="bionic" name="android_bionic" remote="gateworks-github" revision="imx_kk4.4.3_2.0.0-beta" />
-  <project path="external/dnsmasq" name="android_external_dnsmasq" groups="pdk" remote="gateworks-github" revision="imx_kk4.4.3_2.0.0-beta" />
-  <project path="external/iproute2" name="android_external_iproute2" groups="pdk" remote="gateworks-github" revision="imx_kk4.4.3_2.0.0-beta" />
-  <project path="external/iptables" name="android_external_iptables" remote="gateworks-github" revision="imx_kk4.4.3_2.0.0-beta" />
-  <project path="external/kernel-headers" name="android_external_kernel-headers" remote="gateworks-github" revision="imx_kk4.4.3_2.0.0-beta" />
-  <project path="external/linux-tools-perf" name="android_external_linux-tools-perf" remote="gateworks-github" revision="imx_kk4.4.3_2.0.0-beta" />
-  <project path="bootable/recovery" name="android_bootable_recovery" remote="gateworks-github" revision="imx_kk4.4.3_2.0.0-beta" />
-  <project path="dalvik" name="platform-dalvik" remote="gateworks-github" revision="imx_kk4.4.3_2.0.0-beta" />
-  <project path="external/chromium_org" name="platform-external-chromium_org" remote="gateworks-github" revision="imx_kk4.4.3_2.0.0-beta" />
-  <project path="external/ppp" name="android_external_ppp" remote="gateworks-github" revision="imx_kk4.4.3_2.0.0-beta" />
-  <project path="external/skia" name="skia" remote="gateworks-github" revision="imx_kk4.4.3_2.0.0-beta" />
-  <project path="external/tinyalsa" name="tinyalsa" remote="gateworks-github" revision="imx_kk4.4.3_2.0.0-beta" />
-  <project path="frameworks/av" name="frameworks_av" remote="gateworks-github" revision="imx_kk4.4.3_2.0.0-beta" />
-  <project path="frameworks/base" name="android_frameworks_base" remote="gateworks-github" revision="imx_kk4.4.3_2.0.0-beta" />
-  <project path="frameworks/native" name="frameworks_native" remote="gateworks-github" revision="imx_kk4.4.3_2.0.0-beta" />
-  <project path="hardware/libhardware" name="android_hardware_libhardware" remote="gateworks-github" revision="imx_kk4.4.3_2.0.0-beta" />
-  <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" remote="gateworks-github" revision="imx_kk4.4.3_2.0.0-beta" />
-  <project path="hardware/ril" name="android_hardware_ril" remote="gateworks-github" revision="imx_kk4.4.3_2.0.0-beta" />
-  <project path="libcore" name="android_libcore" remote="gateworks-github" revision="imx_kk4.4.3_2.0.0-beta" />
-  <project path="packages/apps/Gallery" name="android_packages_apps_Gallery" remote="gateworks-github" revision="imx_kk4.4.3_2.0.0-beta" />
-  <project path="packages/apps/Gallery2" name="android_app_gallery2" remote="gateworks-github" revision="imx_kk4.4.3_2.0.0-beta" />
-  <project path="packages/apps/Music" name="android_packages_apps_music" remote="gateworks-github" revision="imx_kk4.4.3_2.0.0-beta" />
-  <project path="packages/apps/Settings" name="android_packages_apps_settings" remote="gateworks-github" revision="imx_kk4.4.3_2.0.0-beta" />
-  <project path="packages/apps/SoundRecorder" name="android_packages_apps_soundrecorder" remote="gateworks-github" revision="imx_kk4.4.3_2.0.0-beta" />
-  <project path="packages/providers/MediaProvider" name="android_packages_providers_mediaprovider" remote="gateworks-github" revision="imx_kk4.4.3_2.0.0-beta" />
-  <project path="packages/wallpapers/Basic" name="android_packages_wallpapers_basic" remote="gateworks-github" revision="imx_kk4.4.3_2.0.0-beta" />
-  <project path="system/netd" name="android_system_netd" remote="gateworks-github" revision="imx_kk4.4.3_2.0.0-beta" />
-  <project path="system/vold" name="android_system_vold" remote="gateworks-github" revision="imx_kk4.4.3_2.0.0-beta" />
+  <project path="bionic" name="android_bionic" remote="gateworks-github" revision="imx_kk4.4.3_2.0.0-ga" />
+  <project path="external/dnsmasq" name="android_external_dnsmasq" groups="pdk" remote="gateworks-github" revision="imx_kk4.4.3_2.0.0-ga" />
+  <project path="external/iproute2" name="android_external_iproute2" groups="pdk" remote="gateworks-github" revision="imx_kk4.4.3_2.0.0-ga" />
+  <project path="external/iptables" name="android_external_iptables" remote="gateworks-github" revision="imx_kk4.4.3_2.0.0-ga" />
+  <project path="external/kernel-headers" name="android_external_kernel-headers" remote="gateworks-github" revision="imx_kk4.4.3_2.0.0-ga" />
+  <project path="external/linux-tools-perf" name="android_external_linux-tools-perf" remote="gateworks-github" revision="imx_kk4.4.3_2.0.0-ga" />
+  <project path="bootable/recovery" name="android_bootable_recovery" remote="gateworks-github" revision="imx_kk4.4.3_2.0.0-ga" />
+  <project path="dalvik" name="platform-dalvik" remote="gateworks-github" revision="imx_kk4.4.3_2.0.0-ga" />
+  <project path="external/chromium_org" name="platform-external-chromium_org" remote="gateworks-github" revision="imx_kk4.4.3_2.0.0-ga" />
+  <project path="external/ppp" name="android_external_ppp" remote="gateworks-github" revision="imx_kk4.4.3_2.0.0-ga" />
+  <project path="external/skia" name="skia" remote="gateworks-github" revision="imx_kk4.4.3_2.0.0-ga" />
+  <project path="external/tinyalsa" name="tinyalsa" remote="gateworks-github" revision="imx_kk4.4.3_2.0.0-ga" />
+  <project path="frameworks/av" name="frameworks_av" remote="gateworks-github" revision="imx_kk4.4.3_2.0.0-ga" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="gateworks-github" revision="imx_kk4.4.3_2.0.0-ga" />
+  <project path="frameworks/native" name="frameworks_native" remote="gateworks-github" revision="imx_kk4.4.3_2.0.0-ga" />
+  <project path="hardware/libhardware" name="android_hardware_libhardware" remote="gateworks-github" revision="imx_kk4.4.3_2.0.0-ga" />
+  <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" remote="gateworks-github" revision="imx_kk4.4.3_2.0.0-ga" />
+  <project path="hardware/ril" name="android_hardware_ril" remote="gateworks-github" revision="imx_kk4.4.3_2.0.0-ga" />
+  <project path="libcore" name="android_libcore" remote="gateworks-github" revision="imx_kk4.4.3_2.0.0-ga" />
+  <project path="packages/apps/Gallery" name="android_packages_apps_Gallery" remote="gateworks-github" revision="imx_kk4.4.3_2.0.0-ga" />
+  <project path="packages/apps/Gallery2" name="android_app_gallery2" remote="gateworks-github" revision="imx_kk4.4.3_2.0.0-ga" />
+  <project path="packages/apps/Music" name="android_packages_apps_music" remote="gateworks-github" revision="imx_kk4.4.3_2.0.0-ga" />
+  <project path="packages/apps/Settings" name="android_packages_apps_settings" remote="gateworks-github" revision="imx_kk4.4.3_2.0.0-ga" />
+  <project path="packages/apps/SoundRecorder" name="android_packages_apps_soundrecorder" remote="gateworks-github" revision="imx_kk4.4.3_2.0.0-ga" />
+  <project path="packages/providers/MediaProvider" name="android_packages_providers_mediaprovider" remote="gateworks-github" revision="imx_kk4.4.3_2.0.0-ga" />
+  <project path="packages/wallpapers/Basic" name="android_packages_wallpapers_basic" remote="gateworks-github" revision="imx_kk4.4.3_2.0.0-ga" />
+  <project path="system/netd" name="android_system_netd" remote="gateworks-github" revision="imx_kk4.4.3_2.0.0-ga" />
+  <project path="system/vold" name="android_system_vold" remote="gateworks-github" revision="imx_kk4.4.3_2.0.0-ga" />
+  <project path="external/libselinux" name="platform_external_libselinux" remote="gateworks-github" revision="imx_kk4.4.3_2.0.0-ga" groups="pdk" />
+  <project path="external/openssl" name="platform_external_openssl" remote="gateworks-github" revision="imx_kk4.4.3_2.0.0-ga" groups="pdk" />
+  <project path="frameworks/webview" name="platform_frameworks_webview" remote="gateworks-github" revision="imx_kk4.4.3_2.0.0-ga" />
+  <project path="packages/apps/Launcher2" name="platform_packages_apps_Launcher2" remote="gateworks-github" revision="imx_kk4.4.3_2.0.0-ga" />
+  <project path="packages/apps/Mms" name="platform_packages_apps_Mms" remote="gateworks-github" revision="imx_kk4.4.3_2.0.0-ga" />
 
   <!-- Untouched projects -->
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
@@ -226,7 +231,6 @@
   <project path="external/libphonenumber" name="platform/external/libphonenumber" />
   <project path="external/libpng" name="platform/external/libpng" groups="pdk" />
   <project path="external/libppp" name="platform/external/libppp" />
-  <project path="external/libselinux" name="platform/external/libselinux" groups="pdk" />
   <project path="external/libsepol" name="platform/external/libsepol" groups="pdk" />
   <project path="external/libssh2" name="platform/external/libssh2" />
   <project path="external/libusb" name="platform/external/libusb" />
@@ -262,7 +266,6 @@
   <project path="external/opencv" name="platform/external/opencv" />
   <project path="external/openfst" name="platform/external/openfst" />
   <project path="external/openssh" name="platform/external/openssh" />
-  <project path="external/openssl" name="platform/external/openssl" groups="pdk" />
   <project path="external/oprofile" name="platform/external/oprofile" />
   <project path="external/pixman" name="platform/external/pixman" />
   <project path="external/proguard" name="platform/external/proguard" groups="pdk-java" />
@@ -329,7 +332,6 @@
   <project path="frameworks/support" name="platform/frameworks/support" />
   <project path="frameworks/testing" name="platform/frameworks/testing" />
   <project path="frameworks/volley" name="platform/frameworks/volley" />
-  <project path="frameworks/webview" name="platform/frameworks/webview" />
   <project path="frameworks/wilhelm" name="platform/frameworks/wilhelm" />
   <project path="hardware/akm" name="platform/hardware/akm" />
   <project path="hardware/broadcom/libbt" name="platform/hardware/broadcom/libbt" groups="pdk" />
@@ -368,10 +370,8 @@
   <project path="packages/apps/HTMLViewer" name="platform/packages/apps/HTMLViewer" />
   <project path="packages/apps/InCallUI" name="platform/packages/apps/InCallUI" />
   <project path="packages/apps/KeyChain" name="platform/packages/apps/KeyChain" />
-  <project path="packages/apps/Launcher2" name="platform/packages/apps/Launcher2" />
   <project path="packages/apps/Launcher3" name="platform/packages/apps/Launcher3" />
   <project path="packages/apps/LegacyCamera" name="platform/packages/apps/LegacyCamera" />
-  <project path="packages/apps/Mms" name="platform/packages/apps/Mms" />
   <project path="packages/apps/MusicFX" name="platform/packages/apps/MusicFX" />
   <project path="packages/apps/Nfc" name="platform/packages/apps/Nfc" />
   <project path="packages/apps/OneTimeInitializer" name="platform/packages/apps/OneTimeInitializer" />
