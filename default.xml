@@ -10,8 +10,6 @@
            fetch="git://github.com/Gateworks/" />
   <remote  name="github"
            fetch="git://github.com/" />
-  <remote  name="gitorious"
-           fetch="git://gitorious.org/" />
   <remote  name="android-x86"
            fetch="http://git.android-x86.org/" />
 
@@ -31,13 +29,13 @@
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="system/core" name="android_system_core" remote="gateworks-github" revision="imx_kk4.4.3_2.0.0-ga" />
+  <project path="external/can-utils" name="android_can-utils" remote="gateworks-github" revision="imx_kk4.4.3_2.0.0-ga" />
 
   <!-- Gateworks patches to Freescale (proprietary) components -->
   <project path="hardware/imx" name="hardware-imx" remote="fsl-proprietary" revision="imx_kk4.4.3_2.0.0-ga" />
 
   <!-- projects (OpenSource) added by Gateworks -->
   <project path="external/i2c-tools" name="suapapa/i2c-tools" remote="github" revision="android" />
-  <project path="external/can-utils" name="linux-can/can-utils.git" remote="gitorious" revision="master" />
   <project path="packages/apps/TSCalibration2" name="platform/packages/apps/TSCalibration2" remote="android-x86" revision="kitkat-x86" />
 
   <!-- projects (proprietary) added by Freescale -->
