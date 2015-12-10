@@ -10,8 +10,6 @@
            fetch="git://github.com/Gateworks/" />
   <remote  name="github"
            fetch="git://github.com/" />
-  <remote  name="android-x86"
-           fetch="http://git.android-x86.org/" />
 
   <default revision="refs/tags/android-4.4.3_r1"
            remote="aosp"
@@ -36,7 +34,7 @@
 
   <!-- projects (OpenSource) added by Gateworks -->
   <project path="external/i2c-tools" name="suapapa/i2c-tools" remote="github" revision="android" />
-  <project path="packages/apps/TSCalibration2" name="platform/packages/apps/TSCalibration2" remote="android-x86" revision="kitkat-x86" />
+  <project path="packages/apps/TSCalibration2" name="packages_apps_tscalibration2" remote="gateworks-github" revision="kitkat-x86" />
 
   <!-- projects (proprietary) added by Freescale -->
   <project path="device/fsl" name="android_device_fsl" remote="fsl-proprietary" revision="imx_kk4.4.3_2.0.0-ga" />
