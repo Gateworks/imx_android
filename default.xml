@@ -2,21 +2,73 @@
 <manifest>
 
   <remote  name="aosp"
-           fetch=".." />
+           fetch="https://android.googlesource.com/" />
+  <remote  name="fsl-proprietary"
+           fetch="ssh://git@git.bitbucket.org/gateworks-android/" />
+  <remote  name="github"
+           fetch="git://github.com/" />
+  <remote  name="sourceforge"
+           fetch="git://git.code.sf.net/" />
   <default revision="refs/tags/android-5.1.1_r1"
            remote="aosp"
            sync-j="4" />
 
-  <project path="build" name="platform/build" groups="pdk,tradefed" >
+  <!-- Gateworks patches to OpenSource components -->
+  <project path="bionic" name="Gateworks/android_bionic" remote="github" revision="imx_l5.1.1_2.1.0-ga" groups="pdk" />
+  <project path="bootable/bootloader/uboot-imx" name="Gateworks/u-boot-imx6" remote="github" revision="gateworks_v2015.04" />
+  <project path="bootable/recovery" name="Gateworks/android_bootable_recovery" remote="github" revision="imx_l5.1.1_2.1.0-ga" groups="pdk" />
+  <project path="build" name="Gateworks/android_build" remote="github" revision="imx_l5.1.1_2.1.0-ga"  groups="pdk,tradefed" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
+  <project path="dalvik" name="Gateworks/platform-dalvik" remote="github" revision="imx_l5.1.1_2.1.0-ga" groups="pdk-cw-fs" />
+  <project path="device/gateworks" name="Gateworks/android_device_gateworks" remote="github" revision="imx_l5.1.1_2.1.0-ga" groups="pdk" />
+  <project path="external/busybox" name="Gateworks/android-busybox" remote="github" revision="imx_l5.1.1_2.1.0-ga" />
+  <project path="external/can-utils" name="Gateworks/android_can-utils" remote="github" revision="imx_l5.1.1_2.1.0-ga" />
+  <project path="external/i2c-tools" name="suapapa/i2c-tools" remote="github" revision="android" />
+  <project path="external/kernel-headers" name="Gateworks/android_external_kernel-headers" remote="github" revision="imx_l5.1.1_2.1.0-ga" groups="pdk-cw-fs" />
+  <project path="external/libpng" name="Gateworks/android_external_libpng" remote="github" revision="imx_l5.1.1_2.1.0-ga" groups="pdk" />
+  <project path="external/linux-lib" name="Gateworks/android_external_linux-lib" remote="github" revision="imx_l5.1.1_2.1.0-ga" />
+  <project path="external/linux-test" name="Gateworks/imx-linux-test" remote="github" revision="imx_l5.1.1_2.1.0-ga" />
+  <project path="external/linux-tools-perf" name="Gateworks/android_external_linux-tools-perf" remote="github" revision="imx_l5.1.1_2.1.0-ga" groups="pdk-cw-fs" />
+  <project path="external/mtd-utils" name="Gateworks/android_external_mtd-utils" remote="github" revision="imx_l5.1.1_2.1.0-ga" />
+  <project path="external/ntfs-3g" name="Gateworks/ntfs-3g" remote="github" revision="imx_l5.1.1_2.1.0-ga" />
+  <project path="external/powerdebug" name="Gateworks/powerdebug" remote="github" revision="imx_l5.1.1_2.1.0-ga" />
+  <project path="external/ppp" name="Gateworks/android_external_ppp" remote="github" revision="imx_l5.1.1_2.1.0-ga" groups="pdk-cw-fs" />
+  <project path="external/skia" name="Gateworks/skia" remote="github" revision="imx_l5.1.1_2.1.0-ga" groups="pdk-cw-fs,qcom_msm8x26" />
+  <project path="external/sonivox" name="Gateworks/android_external_sonivox" remote="github" revision="imx_l5.1.1_2.1.0-ga" groups="pdk" />
+  <project path="external/tinyalsa" name="Gateworks/tinyalsa" remote="github" revision="imx_l5.1.1_2.1.0-ga" groups="pdk" />
+  <project path="external/wpa_supplicant_8" name="Gateworks/android_external_wpa_supplicant_8" remote="github" revision="imx_l5.1.1_2.1.0-ga" groups="pdk" />
+  <project path="frameworks/av" name="Gateworks/frameworks_av" remote="github" revision="imx_l5.1.1_2.1.0-ga" groups="pdk" />
+  <project path="frameworks/base" name="Gateworks/android_frameworks_base" remote="github" revision="imx_l5.1.1_2.1.0-ga" groups="pdk-cw-fs" />
+  <project path="frameworks/native" name="Gateworks/frameworks_native" remote="github" revision="imx_l5.1.1_2.1.0-ga" groups="pdk" />
+  <project path="frameworks/opt/telephony" name="Gateworks/platform_frameworks_opt_telephony" remote="github" revision="imx_l5.1.1_2.1.0-ga" groups="pdk" />
+  <project path="frameworks/webview" name="Gateworks/platform_frameworks_webview" remote="github" revision="imx_l5.1.1_2.1.0-ga" groups="pdk-cw-fs" />
+  <project path="hardware/libhardware" name="Gateworks/android_hardware_libhardware" remote="github" revision="imx_l5.1.1_2.1.0-ga" groups="pdk" />
+  <project path="hardware/libhardware_legacy" name="Gateworks/android_hardware_libhardware_legacy" remote="github" revision="imx_l5.1.1_2.1.0-ga" groups="pdk" />
+  <project path="kernel_imx" name="Gateworks/linux-imx6" remote="github" revision="gateworks_l5.1.1_2.1.0-ga" />
+  <project path="packages/apps/Gallery" name="Gateworks/android_packages_apps_Gallery" remote="github" revision="imx_l5.1.1_2.1.0-ga" />
+  <project path="packages/apps/Gallery2" name="Gateworks/android_app_gallery2" remote="github" revision="imx_l5.1.1_2.1.0-ga" />
+  <project path="packages/apps/GateworksUtil" name="Gateworks/android_packages_apps_gateworksutil" remote="github" revision="master" />
+  <project path="packages/apps/GateworksDemo" name="Gateworks/android_packages_apps_gateworksdemo" remote="github" revision="master" />
+  <project path="packages/apps/Settings" name="Gateworks/android_packages_apps_settings" remote="github" revision="imx_l5.1.1_2.1.0-ga" />
+  <project path="packages/apps/SoundRecorder" name="Gateworks/android_packages_apps_soundrecorder" remote="github" revision="imx_l5.1.1_2.1.0-ga" />
+  <project path="packages/apps/TSCalibration2" name="Gateworks/packages_apps_tscalibration2" remote="github" revision="kitkat-x86" />
+  <project path="system/core" name="Gateworks/android_system_core" remote="github" revision="imx_l5.1.1_2.1.0-ga" groups="pdk" />
+  <project path="system/netd" name="Gateworks/android_system_netd" remote="github" revision="imx_l5.1.1_2.1.0-ga" groups="pdk" />
+  <project path="system/vold" name="Gateworks/android_system_vold" remote="github" revision="imx_l5.1.1_2.1.0-ga" groups="pdk" />
+
+  <!-- projects (proprietary) added by Freescale -->
+  <project path="device/fsl" name="android_device_fsl" remote="fsl-proprietary" revision="imx_l5.1.1_2.1.0-ga" />
+  <project path="device/fsl-proprietary" name="fsl-proprietary" remote="fsl-proprietary" revision="imx_l5.1.1_2.1.0-ga" />
+  <project path="external/fsl_vpu_omx" name="fsl_vpu_omx" remote="fsl-proprietary" revision="imx_l5.1.1_2.1.0-ga" />
+  <project path="external/linux-firmware-imx" name="linux-firmware-imx" remote="fsl-proprietary" revision="imx_l5.1.1_2.1.0-ga" />
+  <project path="hardware/imx" name="hardware-imx" remote="fsl-proprietary" revision="imx_l5.1.1_2.1.0-ga" />
+
+  <!-- Untouched projects -->
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
   <project path="art" name="platform/art" groups="pdk" />
-  <project path="bionic" name="platform/bionic" groups="pdk" />
   <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" groups="pdk-cw-fs" />
-  <project path="bootable/recovery" name="platform/bootable/recovery" groups="pdk" />
   <project path="cts" name="platform/cts" groups="cts,pdk-cw-fs" />
-  <project path="dalvik" name="platform/dalvik" groups="pdk-cw-fs" />
   <project path="developers/build" name="platform/developers/build" />
   <project path="developers/demos" name="platform/developers/demos" />
   <project path="developers/docs" name="platform/developers/docs" />
@@ -170,7 +222,6 @@
   <project path="external/jsr305" name="platform/external/jsr305" groups="pdk-cw-fs,tradefed" />
   <project path="external/junit" name="platform/external/junit" groups="pdk-cw-fs,tradefed" />
   <project path="external/ksoap2" name="platform/external/ksoap2" groups="pdk-cw-fs" />
-  <project path="external/kernel-headers" name="platform/external/kernel-headers" groups="pdk-cw-fs" />
   <project path="external/libcap-ng" name="platform/external/libcap-ng" groups="pdk-cw-fs" />
   <project path="external/libcxx" name="platform/external/libcxx" groups="pdk" />
   <project path="external/libcxxabi" name="platform/external/libcxxabi" groups="pdk" />
@@ -187,7 +238,6 @@
   <project path="external/libopus" name="platform/external/libopus" groups="pdk" />
   <project path="external/libpcap" name="platform/external/libpcap" groups="pdk,pdk-cw-fs" />
   <project path="external/libphonenumber" name="platform/external/libphonenumber" groups="pdk-cw-fs" />
-  <project path="external/libpng" name="platform/external/libpng" groups="pdk" />
   <project path="external/libseccomp-helper" name="platform/external/libseccomp-helper" groups="pdk-cw-fs" />
   <project path="external/libselinux" name="platform/external/libselinux" groups="pdk" />
   <project path="external/libsepol" name="platform/external/libsepol" groups="pdk" />
@@ -201,7 +251,6 @@
   <project path="external/libvterm" name="platform/external/libvterm" groups="pdk-cw-fs" />
   <project path="external/libxml2" name="platform/external/libxml2" groups="pdk-cw-fs" />
   <project path="external/libyuv" name="platform/external/libyuv" groups="libyuv,pdk-cw-fs" />
-  <project path="external/linux-tools-perf" name="platform/external/linux-tools-perf" groups="pdk-cw-fs" />
   <project path="external/littlemock" name="platform/external/littlemock" groups="pdk-cw-fs" />
   <project path="external/lldb" name="platform/external/lldb" groups="pdk-cw-fs" />
   <project path="external/llvm" name="platform/external/llvm" groups="pdk" />
@@ -239,7 +288,6 @@
   <project path="external/pcre" name="platform/external/pcre" groups="pdk-cw-fs" />
   <project path="external/pdfium" name="platform/external/pdfium" groups="pdk-cw-fs" />
   <project path="external/pixman" name="platform/external/pixman" groups="pdk-cw-fs" />
-  <project path="external/ppp" name="platform/external/ppp" groups="pdk-cw-fs" />
   <project path="external/proguard" name="platform/external/proguard" groups="pdk-java,tradefed" />
   <project path="external/protobuf" name="platform/external/protobuf" groups="pdk" />
   <project path="external/qemu" name="platform/external/qemu" groups="pdk-cw-fs" />
@@ -251,10 +299,8 @@
   <project path="external/scrypt" name="platform/external/scrypt" groups="pdk" />
   <project path="external/sepolicy" name="platform/external/sepolicy" groups="pdk" />
   <project path="external/sfntly" name="platform/external/sfntly" groups="pdk-cw-fs,qcom_msm8x26" />
-  <project path="external/skia" name="platform/external/skia" groups="pdk-cw-fs,qcom_msm8x26" />
   <project path="external/smack" name="platform/external/smack" groups="pdk-cw-fs" />
   <project path="external/smali" name="platform/external/smali" groups="pdk-cw-fs" />
-  <project path="external/sonivox" name="platform/external/sonivox" groups="pdk" />
   <project path="external/speex" name="platform/external/speex" groups="pdk" />
   <project path="external/sqlite" name="platform/external/sqlite" groups="pdk" />
   <project path="external/srec" name="platform/external/srec" groups="pdk-cw-fs" />
@@ -266,7 +312,6 @@
   <project path="external/tagsoup" name="platform/external/tagsoup" groups="pdk-cw-fs,tradefed" />
   <project path="external/tcpdump" name="platform/external/tcpdump" groups="pdk,pdk-cw-fs" />
   <project path="external/timezonepicker-support" name="platform/external/timezonepicker-support" groups="pdk-cw-fs" />
-  <project path="external/tinyalsa" name="platform/external/tinyalsa" groups="pdk" />
   <project path="external/tinycompress" name="platform/external/tinycompress" groups="pdk" />
   <project path="external/tinyxml" name="platform/external/tinyxml" groups="pdk" />
   <project path="external/tinyxml2" name="platform/external/tinyxml2" groups="pdk" />
@@ -275,15 +320,12 @@
   <project path="external/vixl" name="platform/external/vixl" groups="pdk" />
   <project path="external/webp" name="platform/external/webp" groups="pdk-cw-fs,qcom_msm8x26" />
   <project path="external/webrtc" name="platform/external/webrtc" groups="pdk" />
-  <project path="external/wpa_supplicant_8" name="platform/external/wpa_supplicant_8" groups="pdk" />
   <project path="external/xmlwriter" name="platform/external/xmlwriter" groups="pdk-cw-fs" />
   <project path="external/xmp_toolkit" name="platform/external/xmp_toolkit" groups="pdk-cw-fs" />
   <project path="external/yaffs2" name="platform/external/yaffs2" groups="pdk" />
   <project path="external/zlib" name="platform/external/zlib" groups="pdk" />
   <project path="external/zopfli" name="platform/external/zopfli" groups="pdk-cw-fs" />
   <project path="external/zxing" name="platform/external/zxing" groups="pdk-cw-fs" />
-  <project path="frameworks/av" name="platform/frameworks/av" groups="pdk" />
-  <project path="frameworks/base" name="platform/frameworks/base" groups="pdk-cw-fs" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" />
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk" />
@@ -292,7 +334,6 @@
   <project path="frameworks/minikin" name="platform/frameworks/minikin" groups="pdk-cw-fs" />
   <project path="frameworks/ml" name="platform/frameworks/ml" groups="pdk-cw-fs" />
   <project path="frameworks/multidex" name="platform/frameworks/multidex" groups="pdk-cw-fs" />
-  <project path="frameworks/native" name="platform/frameworks/native" groups="pdk" />
   <project path="frameworks/opt/bitmap" name="platform/frameworks/opt/bitmap" />
   <project path="frameworks/opt/bluetooth" name="platform/frameworks/opt/bluetooth" groups="pdk-cw-fs" />
   <project path="frameworks/opt/calendar" name="platform/frameworks/opt/calendar" groups="pdk-cw-fs" />
@@ -309,14 +350,12 @@
   <project path="frameworks/opt/net/ethernet" name="platform/frameworks/opt/net/ethernet" />
   <project path="frameworks/opt/photoviewer" name="platform/frameworks/opt/photoviewer" groups="pdk-cw-fs" />
   <project path="frameworks/opt/setupwizard" name="platform/frameworks/opt/setupwizard" groups="pdk-cw-fs" />
-  <project path="frameworks/opt/telephony" name="platform/frameworks/opt/telephony" groups="pdk" />
   <project path="frameworks/opt/timezonepicker" name="platform/frameworks/opt/timezonepicker" groups="pdk-cw-fs" />
   <project path="frameworks/opt/vcard" name="platform/frameworks/opt/vcard" groups="pdk-cw-fs" />
   <project path="frameworks/opt/widget" name="platform/frameworks/opt/widget" groups="pdk-cw-fs" />
   <project path="frameworks/rs" name="platform/frameworks/rs" groups="pdk" />
   <project path="frameworks/support" name="platform/frameworks/support" groups="pdk-cw-fs" />
   <project path="frameworks/volley" name="platform/frameworks/volley" groups="pdk-cw-fs" />
-  <project path="frameworks/webview" name="platform/frameworks/webview" groups="pdk-cw-fs" />
   <project path="frameworks/wilhelm" name="platform/frameworks/wilhelm" groups="pdk-cw-fs" />
   <project path="hardware/akm" name="platform/hardware/akm" />
   <project path="hardware/broadcom/libbt" name="platform/hardware/broadcom/libbt" groups="pdk" />
@@ -336,8 +375,6 @@
   <project path="hardware/intel/img/psb_headers" name="platform/hardware/intel/img/psb_headers" groups="intel" />
   <project path="hardware/intel/img/psb_video" name="platform/hardware/intel/img/psb_video" groups="intel" />
   <project path="hardware/invensense" name="platform/hardware/invensense" groups="invensense" />
-  <project path="hardware/libhardware" name="platform/hardware/libhardware" groups="pdk" />
-  <project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" groups="pdk" />
   <project path="hardware/nvidia/audio" name="platform/hardware/nvidia/audio" groups="nvidia_audio" />
   <project path="hardware/nvidia/tegra124" name="platform/hardware/nvidia/tegra124" groups="tegra124" />
   <project path="hardware/qcom/audio" name="platform/hardware/qcom/audio" groups="qcom,qcom_audio" />
@@ -378,8 +415,6 @@
   <project path="packages/apps/Email" name="platform/packages/apps/Email" />
   <project path="packages/apps/Exchange" name="platform/packages/apps/Exchange" />
   <project path="packages/apps/FMRadio" name="platform/packages/apps/FMRadio" />
-  <project path="packages/apps/Gallery" name="platform/packages/apps/Gallery" />
-  <project path="packages/apps/Gallery2" name="platform/packages/apps/Gallery2" />
   <project path="packages/apps/HTMLViewer" name="platform/packages/apps/HTMLViewer" />
   <project path="packages/apps/InCallUI" name="platform/packages/apps/InCallUI" />
   <project path="packages/apps/KeyChain" name="platform/packages/apps/KeyChain" />
@@ -398,9 +433,7 @@
   <project path="packages/apps/Protips" name="platform/packages/apps/Protips" />
   <project path="packages/apps/Provision" name="platform/packages/apps/Provision" />
   <project path="packages/apps/QuickSearchBox" name="platform/packages/apps/QuickSearchBox" />
-  <project path="packages/apps/Settings" name="platform/packages/apps/Settings" />
   <project path="packages/apps/SmartCardService" name="platform/packages/apps/SmartCardService" />
-  <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" />
   <project path="packages/apps/SpareParts" name="platform/packages/apps/SpareParts" />
   <project path="packages/apps/SpeechRecorder" name="platform/packages/apps/SpeechRecorder" />
   <project path="packages/apps/Stk" name="platform/packages/apps/Stk" />
@@ -489,13 +522,10 @@
   <project path="prebuilts/sdk" name="platform/prebuilts/sdk" groups="pdk,tradefed" />
   <project path="prebuilts/tools" name="platform/prebuilts/tools" groups="pdk,tools" />
   <project path="sdk" name="platform/sdk" groups="pdk-cw-fs" />
-  <project path="system/core" name="platform/system/core" groups="pdk" />
   <project path="system/extras" name="platform/system/extras" groups="pdk" />
   <project path="system/keymaster" name="platform/system/keymaster" groups="pdk" />
   <project path="system/media" name="platform/system/media" groups="pdk" />
-  <project path="system/netd" name="platform/system/netd" groups="pdk" />
   <project path="system/security" name="platform/system/security" groups="pdk" />
-  <project path="system/vold" name="platform/system/vold" groups="pdk" />
   <project path="tools/adt/eclipse" name="platform/tools/adt/eclipse" groups="notdefault,tools" />
   <project path="tools/adt/idea" name="platform/tools/adt/idea" groups="notdefault,tools" />
   <project path="tools/base" name="platform/tools/base" groups="notdefault,tools" />
