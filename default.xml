@@ -35,6 +35,8 @@
   <!-- projects (OpenSource) added by Gateworks -->
   <project path="external/i2c-tools" name="suapapa/i2c-tools" remote="github" revision="android" />
   <project path="packages/apps/TSCalibration2" name="packages_apps_tscalibration2" remote="gateworks-github" revision="kitkat-x86" />
+  <project path="packages/apps/GateworksUtil" name="android_packages_apps_gateworksutil" remote="gateworks-github" revision="master" />
+  <project path="packages/apps/GateworksDemo" name="android_packages_apps_gateworksdemo" remote="gateworks-github" revision="master" />
 
   <!-- projects (proprietary) added by Freescale -->
   <project path="device/fsl" name="android_device_fsl" remote="fsl-proprietary" revision="imx_kk4.4.3_2.0.0-ga" />
