@@ -26,6 +26,7 @@
   <project path="external/can-utils" name="Gateworks/android_can-utils" remote="github" revision="imx_l5.1.1_2.1.0-ga" />
   <project path="external/i2c-tools" name="suapapa/i2c-tools" remote="github" revision="android" />
   <project path="external/kernel-headers" name="Gateworks/android_external_kernel-headers" remote="github" revision="imx_l5.1.1_2.1.0-ga" groups="pdk-cw-fs" />
+  <project path="external/kobs-ng" name="Gateworks/android_external_kobs-ng" remote="github" revision="imx_l5.1.1_2.1.0-ga" />
   <project path="external/libpng" name="Gateworks/android_external_libpng" remote="github" revision="imx_l5.1.1_2.1.0-ga" groups="pdk" />
   <project path="external/linux-lib" name="Gateworks/android_external_linux-lib" remote="github" revision="imx_l5.1.1_2.1.0-ga" />
   <project path="external/linux-test" name="Gateworks/imx-linux-test" remote="github" revision="imx_l5.1.1_2.1.0-ga" />
