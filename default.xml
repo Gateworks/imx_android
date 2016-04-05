@@ -46,6 +46,7 @@
   <project path="frameworks/webview" name="Gateworks/platform_frameworks_webview" remote="github" revision="imx_l5.1.1_2.1.0-ga" groups="pdk-cw-fs" />
   <project path="hardware/libhardware" name="Gateworks/android_hardware_libhardware" remote="github" revision="imx_l5.1.1_2.1.0-ga" groups="pdk" />
   <project path="hardware/libhardware_legacy" name="Gateworks/android_hardware_libhardware_legacy" remote="github" revision="imx_l5.1.1_2.1.0-ga" groups="pdk" />
+  <project path="hardware/gps" name="android-x86-mirror/platform_hardware_gps" remote="github" revision="lollipop-x86" />
   <project path="kernel_imx" name="Gateworks/linux-imx6" remote="github" revision="gateworks_l5.1.1_2.1.0-ga" />
   <project path="packages/apps/fsl_imx_demo" name="Gateworks/fsl_imx_demo" remote="github" revision="imx_l5.1.1_2.1.0-ga" />
   <project path="packages/apps/Browser" name="Gateworks/android_packages_apps_browser" remote="github" revision="imx_l5.1.1_2.1.0-ga" />
@@ -383,7 +384,6 @@
   <project path="hardware/qcom/audio" name="platform/hardware/qcom/audio" groups="qcom,qcom_audio" />
   <project path="hardware/qcom/bt" name="platform/hardware/qcom/bt" groups="qcom" />
   <project path="hardware/qcom/display" name="platform/hardware/qcom/display" groups="qcom,qcom_display" />
-  <project path="hardware/qcom/gps" name="platform/hardware/qcom/gps" groups="qcom,qcom_gps" />
   <project path="hardware/qcom/keymaster" name="platform/hardware/qcom/keymaster" groups="qcom" />
   <project path="hardware/qcom/media" name="platform/hardware/qcom/media" groups="qcom" />
   <project path="hardware/qcom/msm8960" name="platform/hardware/qcom/msm8960" groups="qcom_msm8960" />
