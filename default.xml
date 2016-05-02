@@ -21,6 +21,7 @@
 
   <!-- Gateworks device layer -->
   <project path="device/gateworks" name="android_device_gateworks" revision="imx_kk4.4.3_2.0.0-ga" remote="gateworks-github" groups="pdk" />
+  <project path="external/gsc" name="gsc_update" revision="master" remote="gateworks-github" />
 
   <!-- Gateworks patches to other (OpenSource) components -->
   <project path="build" name="android_build" remote="gateworks-github" revision="imx_kk4.4.3_2.0.0-ga" groups="pdk" >
