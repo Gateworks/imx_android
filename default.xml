@@ -17,7 +17,7 @@
   <project path="bionic" name="Gateworks/android_bionic" remote="github" revision="imx_l5.1.1_2.1.0-ga" groups="pdk" />
   <project path="bootable/bootloader/uboot-imx" name="Gateworks/u-boot-imx6" remote="github" revision="gateworks_v2015.04" />
   <project path="bootable/recovery" name="Gateworks/android_bootable_recovery" remote="github" revision="imx_l5.1.1_2.1.0-ga" groups="pdk" />
-  <project path="build" name="Gateworks/android_build" remote="github" revision="imx_l5.1.1_2.1.0-ga"  groups="pdk,tradefed" >
+  <project path="build" name="Gateworks/android_build" remote="github" revision="imx_l5.1.1_2.1.0-ga_kioskmode"  groups="pdk,tradefed" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="dalvik" name="Gateworks/platform-dalvik" remote="github" revision="imx_l5.1.1_2.1.0-ga" groups="pdk-cw-fs" />
