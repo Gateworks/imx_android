@@ -22,6 +22,9 @@
   </project>
   <project path="dalvik" name="Gateworks/platform-dalvik" remote="github" revision="imx_l5.1.1_2.1.0-ga" groups="pdk-cw-fs" />
   <project path="device/gateworks" name="Gateworks/android_device_gateworks" remote="github" revision="imx_l5.1.1_2.1.0-ga" groups="pdk" />
+  <project path="external/bluetooth/bluez" name="android-x86-mirror/platform_external_bluetooth_bluez" remote="github" revision="lollipop-x86" />
+  <project path="external/bluetooth/glib" name="android-x86-mirror/platform_external_bluetooth_glib" remote="github" revision="lollipop-x86" />
+  <project path="external/bluetooth/sbc" name="android-x86-mirror/platform_external_bluetooth_sbc" remote="github" revision="lollipop-x86" />
   <project path="external/busybox" name="Gateworks/android-busybox" remote="github" revision="imx_l5.1.1_2.1.0-ga" />
   <project path="external/can-utils" name="Gateworks/android_can-utils" remote="github" revision="imx_l5.1.1_2.1.0-ga" />
   <project path="external/i2c-tools" name="suapapa/i2c-tools" remote="github" revision="android" />
@@ -125,7 +128,6 @@
   <project path="external/arduino" name="platform/external/arduino" groups="pdk-cw-fs" />
   <project path="external/bison" name="platform/external/bison" groups="pdk" />
   <project path="external/blktrace" name="platform/external/blktrace" groups="pdk-cw-fs" />
-  <project path="external/bluetooth/bluedroid" name="platform/external/bluetooth/bluedroid" groups="pdk" />
   <project path="external/bouncycastle" name="platform/external/bouncycastle" groups="pdk" />
   <project path="external/bsdiff" name="platform/external/bsdiff" groups="pdk" />
   <project path="external/bzip2" name="platform/external/bzip2" groups="pdk" />
