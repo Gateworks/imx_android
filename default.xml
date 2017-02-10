@@ -7,8 +7,6 @@
            fetch="ssh://git@git.bitbucket.org/gateworks-android/" />
   <remote  name="github"
            fetch="git://github.com/" />
-  <remote  name="sourceforge"
-           fetch="git://git.code.sf.net/" />
   <remote  name="kernel"
            fetch="git://git.kernel.org/pub/scm/linux/kernel/git" />
   <default revision="refs/tags/android-5.1.1_r1"
@@ -24,12 +22,12 @@
   </project>
   <project path="dalvik" name="Gateworks/platform-dalvik" remote="github" revision="imx_l5.1.1_2.1.0-ga" groups="pdk-cw-fs" />
   <project path="device/gateworks" name="Gateworks/android_device_gateworks" remote="github" revision="imx_l5.1.1_2.1.0-ga" groups="pdk" />
-  <project path="external/bluetooth/bluez" name="android-x86-mirror/platform_external_bluetooth_bluez" remote="github" revision="lollipop-x86" />
-  <project path="external/bluetooth/glib" name="android-x86-mirror/platform_external_bluetooth_glib" remote="github" revision="lollipop-x86" />
-  <project path="external/bluetooth/sbc" name="android-x86-mirror/platform_external_bluetooth_sbc" remote="github" revision="lollipop-x86" />
+  <project path="external/bluetooth/bluez" name="Gateworks/android_external_bluetooth_bluez" remote="github" revision="imx_l5.1.1_2.1.0-ga" />
+  <project path="external/bluetooth/glib" name="Gateworks/android_external_bluetooth_glib" remote="github" revision="imx_l5.1.1_2.1.0-ga" />
+  <project path="external/bluetooth/sbc" name="Gateworks/android_external_bluetooth_sbc" remote="github" revision="imx_l5.1.1_2.1.0-ga" />
   <project path="external/busybox" name="Gateworks/android-busybox" remote="github" revision="imx_l5.1.1_2.1.0-ga" />
   <project path="external/can-utils" name="Gateworks/android_can-utils" remote="github" revision="imx_l5.1.1_2.1.0-ga" />
-  <project path="external/i2c-tools" name="suapapa/i2c-tools" remote="github" revision="android" />
+  <project path="external/i2c-tools" name="Gateworks/i2c-tools" remote="github" revision="android" />
   <project path="external/kernel-headers" name="Gateworks/android_external_kernel-headers" remote="github" revision="imx_l5.1.1_2.1.0-ga" groups="pdk-cw-fs" />
   <project path="external/kobs-ng" name="Gateworks/android_external_kobs-ng" remote="github" revision="imx_l5.1.1_2.1.0-ga" />
   <project path="external/libpng" name="Gateworks/android_external_libpng" remote="github" revision="imx_l5.1.1_2.1.0-ga" groups="pdk" />
@@ -53,7 +51,7 @@
   <project path="hardware/libhardware" name="Gateworks/android_hardware_libhardware" remote="github" revision="imx_l5.1.1_2.1.0-ga" groups="pdk" />
   <project path="hardware/libhardware_legacy" name="Gateworks/android_hardware_libhardware_legacy" remote="github" revision="imx_l5.1.1_2.1.0-ga" groups="pdk" />
   <project path="linux-firmware" name="firmware/linux-firmware.git" remote="kernel" revision="master" />
-  <project path="hardware/gps" name="android-x86-mirror/platform_hardware_gps" remote="github" revision="lollipop-x86" />
+  <project path="hardware/gps" name="Gateworks/android_hardware_gps" remote="github" revision="gateworks_l5.1.1_2.1.0-ga" />
   <project path="kernel_imx" name="Gateworks/linux-imx6" remote="github" revision="gateworks_l5.1.1_2.1.0-ga" />
   <project path="packages/apps/fsl_imx_demo" name="Gateworks/fsl_imx_demo" remote="github" revision="imx_l5.1.1_2.1.0-ga" />
   <project path="packages/apps/Browser" name="Gateworks/android_packages_apps_browser" remote="github" revision="imx_l5.1.1_2.1.0-ga" />
