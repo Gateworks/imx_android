@@ -51,7 +51,7 @@
   <project path="hardware/libhardware" name="Gateworks/android_hardware_libhardware" remote="github" revision="imx_l5.1.1_2.1.0-ga" groups="pdk" />
   <project path="hardware/libhardware_legacy" name="Gateworks/android_hardware_libhardware_legacy" remote="github" revision="imx_l5.1.1_2.1.0-ga" groups="pdk" />
   <project path="linux-firmware" name="firmware/linux-firmware.git" remote="kernel" revision="master" />
-  <project path="hardware/gps" name="Gateworks/android_hardware_gps" remote="github" revision="gateworks_l5.1.1_2.1.0-ga" />
+  <project path="hardware/gps" name="Gateworks/android_hardware_gps" remote="github" revision="imx_l5.1.1_2.1.0-ga" />
   <project path="kernel_imx" name="Gateworks/linux-imx6" remote="github" revision="gateworks_l5.1.1_2.1.0-ga" />
   <project path="packages/apps/fsl_imx_demo" name="Gateworks/fsl_imx_demo" remote="github" revision="imx_l5.1.1_2.1.0-ga" />
   <project path="packages/apps/Browser" name="Gateworks/android_packages_apps_browser" remote="github" revision="imx_l5.1.1_2.1.0-ga" />
