@@ -48,6 +48,7 @@
   <project path="frameworks/opt/telephony" name="Gateworks/platform_frameworks_opt_telephony" remote="github" revision="imx_l5.1.1_2.1.0-ga" groups="pdk" />
   <project path="frameworks/webview" name="Gateworks/platform_frameworks_webview" remote="github" revision="imx_l5.1.1_2.1.0-ga" groups="pdk-cw-fs" />
   <project path="external/gsc" name="Gateworks/gsc_update" remote="github" revision="master" />
+  <project path="hardware/STMicroelectronics/SensorHAL_Input" name="Gateworks/android_hardware_stm" remote="github" revision="imx_l5.1.1_2.1.0-ga" />
   <project path="hardware/libhardware" name="Gateworks/android_hardware_libhardware" remote="github" revision="imx_l5.1.1_2.1.0-ga" groups="pdk" />
   <project path="hardware/libhardware_legacy" name="Gateworks/android_hardware_libhardware_legacy" remote="github" revision="imx_l5.1.1_2.1.0-ga" groups="pdk" />
   <project path="linux-firmware" name="firmware/linux-firmware.git" remote="kernel" revision="master" />
